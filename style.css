@@ -1,0 +1,114 @@
+body {
+    background-color: #f5f5dc; /* Light gold background */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+header img {
+    width: 100px; /* Adjust logo size as needed */
+}
+
+header h1 {
+    color: #ffd700; /* Gold color */
+    margin-top: 10px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh; /* Center content vertically */
+}
+
+#countdown {
+    display: flex;
+    gap: 20px; /* Space between time units */
+}
+
+.time-unit {
+    text-align: center;
+}
+
+.time-unit span {
+    font-size: 48px;
+    color: #ffd700; /* Gold numbers */
+}
+
+.time-unit p {
+    font-size: 18px;
+    color: #333; /* Dark gray labels */
+}
+
+#celebration {
+    text-align: center;
+}
+
+#celebration img {
+    width: 200px; /* Adjust fireworks size as needed */
+}
+
+#celebration h2 {
+    color: #ffd700; /* Gold text */
+    font-size: 36px;
+    animation: fadeIn 2s; /* Fade-in effect */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+
+.social-icons {
+    margin-bottom: 10px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    color: #ffd700; /* Gold icons */
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.pi-network {
+    position: relative;
+}
+
+#pi-network-text {
+    cursor: pointer;
+    color: #ffd700; /* Gold text */
+}
+
+#pi-network-info {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    border: 1px solid #ffd700; /* Gold border */
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s, visibility 0s 0.5s; /* Smooth hover effect */
+}
+
+#pi-network-text:hover + #pi-network-info {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s, visibility 0s; /* Show with fade */
+}
